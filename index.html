@@ -7,62 +7,90 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Black background */
+            color: #f4f4f4; /* Light text for readability */
         }
-        .sidebar {
-            background-color: #00cfe8;
-            color: white;
-            padding: 15px;
-            width: 200px;
-            float: left;
+
+        header {
+            background-color: #ffb6c1; /* Light pink */
+            color: #1a1a1a; /* Black text */
+            padding: 1rem 0;
+            text-align: center;
         }
-        .sidebar a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            margin: 10px 0;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
+
         .content {
-            margin-left: 220px;
-            padding: 20px;
+            padding: 2rem;
         }
+
+        .content h2 {
+            color: #ffb6c1; /* Light pink */
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #cccccc; /* Light gray text */
+        }
+
         .github-button {
             display: inline-block;
             background-color: #333;
             color: white;
-            padding: 10px 15px;
+            padding: 0.8rem 1.5rem;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin: 1rem 0;
         }
+
         .github-button:hover {
             background-color: #555;
         }
+
         .image-container {
-            background: linear-gradient(45deg, #ff007f, #000000);
-            padding: 20px;
+            margin-top: 2rem;
             text-align: center;
-            border-radius: 10px;
-            margin-top: 20px;
         }
+
         .image-container img {
             max-width: 100%;
             height: auto;
-            border: 1px solid #ddd;
+            border: 2px solid #ffb6c1; /* Light pink border */
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #ffb6c1; /* Light pink */
+            color: #1a1a1a; /* Black text */
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-
-    <div class="sidebar">
-        <h3>CITY DESIGN</h3>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Project</a>
-    </div>
+    <header>
+        <h1>City Design Project</h1>
+    </header>
 
     <div class="content">
-        <h1>City Design Project</h1>
+        <h2>About the Project</h2>
         <p>
             Our City Design project is a bold vision for the future, focusing on creating an eco-friendly, 
             resource-efficient, and socially inclusive urban environment. By integrating innovative strategies, 
@@ -71,7 +99,6 @@
             resource depletion, and environmental sustainability. With a holistic approach, we strive to build a 
             city that thrives on green solutions and inclusivity, ensuring a better quality of life for all its residents.
         </p>
-        <a class="github-button" href="https://github.com/your-repository-link" target="_blank">Find this project on GitHub</a>
 
         <h2>Phase 1: City Map & Topography</h2>
         <p>
@@ -81,13 +108,23 @@
         </p>
 
         <div class="image-container">
-            <img src="city-map.jpg" alt="City Map and Topography">
+            <img src="image.png" alt="City Map and Topography">
         </div>
+
+        <h2>Key Features</h2>
+        <p>
+            1. Eco-friendly architecture with green roofs and solar panels. <br>
+            2. Advanced public transport systems to minimize congestion. <br>
+            3. Efficient waste management systems with recycling initiatives. <br>
+            4. Sustainable energy solutions, including wind and solar energy. <br>
+            5. Community parks and green spaces to enhance quality of life.
+        </p>
+
+        <a class="github-button" href="https://github.com/your-repository-link" target="_blank">Find this project on GitHub</a>
     </div>
 
+    <footer>
+        <p>&copy; 2025 City Design Team. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-<div class="image-container">
-    <img src="image.png" alt="City Map and Topography">
-</div>
-<img src="assets/images/image.png" alt="City Map and Topography">
