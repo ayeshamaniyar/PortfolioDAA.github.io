@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction</title>
+    <title>Course and Introduction Information</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #e9f7f6; /* Light teal background */
             color: #333;
+            line-height: 1.6;
         }
         .container {
             width: 80%;
@@ -61,8 +62,25 @@
         a:hover {
             text-decoration: underline;
         }
-        p {
-            margin: 10px 0;
+        .section {
+            margin-top: 40px;
+        }
+        .dark-container {
+            background-color: #181818;
+            color: #f4f4f4;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+        .dark-container h1, .dark-container h2 {
+            color: #ffffff;
+        }
+        .dark-container p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        .highlight {
+            color: #77aadd;
         }
     </style>
 </head>
@@ -73,7 +91,7 @@
     <div class="container">
         <p><strong>Course:</strong> DAA</p>
         <p><strong>Course Code:</strong> 24ECSC205</p>
-        <p><strong>Course Instructor:</strong> Prof.Vijayalakshmi</p>
+        <p><strong>Course Instructor:</strong> Prof. Vijayalakshmi</p>
         <p><strong>University:</strong> KLE Technological University</p>
         <p><strong>Topic:</strong> City Design</p>
         
@@ -96,52 +114,8 @@
             </tr>
         </table>
     </div>
-</body>
-</html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Information</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #181818;
-            color: #f4f4f4;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: 50px auto;
-            text-align: center;
-        }
-        h1 {
-            font-size: 28px;
-            color: #ffffff;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 24px;
-            color: #ffffff;
-            margin-top: 40px;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 18px;
-            text-align: justify;
-            margin: 0 auto 20px;
-        }
-        .highlight {
-            color: #77aadd;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
+    <div class="dark-container">
         <h1>What is the course about?</h1>
         <p>
             <span class="highlight">—</span> Design and analysis of algorithms is more than a branch of computer science. It is the core of computer science, and, in all fairness, can be said to be relevant to most of science, business, and technology. The course is about understanding the interesting patterns existing in nature as many natural processes can inspire computational algorithms and vice versa. It helps in the development of analytical thinking, which can help in various problem-solving strategies.
@@ -157,4 +131,3 @@
     </div>
 </body>
 </html>
-
