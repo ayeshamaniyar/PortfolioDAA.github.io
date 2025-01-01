@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Design Project - Phase 2</title>
+    <title>City Design Project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,89 +13,108 @@
             color: #f4f4f4; /* Light text for readability */
         }
 
-        .container {
-            display: flex;
-            justify-content: space-between;
-            margin: 2rem 0;
+        header {
+            background-color: #ffb6c1; /* Light pink */
+            color: #1a1a1a; /* Black text */
+            padding: 1rem 0;
+            text-align: center;
         }
 
-        .column {
-            background-color: #333;
-            padding: 1rem;
-            border-radius: 5px;
-            width: 30%;
-            margin-right: 1rem; 
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
 
-        .column h3 {
+        .content {
+            padding: 2rem;
+        }
+
+        .content h2 {
             color: #ffb6c1; /* Light pink */
-            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            margin-top: 1rem;
         }
 
-        .column ul {
-            list-style: none;
-            padding: 0;
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #cccccc; /* Light gray text */
         }
 
-        .column li {
-            margin-bottom: 0.5rem;
+        .github-button {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .github-button:hover {
+            background-color: #555;
+        }
+
+        .image-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ffb6c1; /* Light pink border */
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #ffb6c1; /* Light pink */
+            color: #1a1a1a; /* Black text */
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="column">
-            <h3>Nithish</h3>
-            <ul>
-                <li>Affordable Clean Energy Solutions</li>
-                <li>Microfinance or Lending Services</li>
-                <li>E-commerce & Online Marketplaces</li>
-                <li>Education & Vocational Training Centers</li>
-                <li>Telecommunications Services</li>
-            </ul>
-        </div>
+    <header>
+        <h1>City Design Project</h1>
+    </header>
 
-        <div class="column">
-            <h3>Saideep</h3>
-            <ul>
-                <li>High-Tech Business Parks</li>
-                <li>Autonomous Delivery Services</li>
-                <li>Cultural and Entertainment Districts</li>
-                <li>Shared Mobility Services</li>
-                <li>Mixed-Use Real Estate Projects</li>
-            </ul>
-        </div>
+    <div class="content">
+        <h2>About the Project</h2>
+        <p>
+            Our City Design project is a bold vision for the future, focusing on creating an eco-friendly, 
+            resource-efficient, and socially inclusive urban environment. By integrating innovative strategies, 
+            we aim to enhance energy efficiency, reduce waste, and improve transportation, all while promoting 
+            community well-being. This project addresses critical urban challenges such as overpopulation, 
+            resource depletion, and environmental sustainability. With a holistic approach, we strive to build a 
+            city that thrives on green solutions and inclusivity, ensuring a better quality of life for all its residents.
+        </p>
 
-        <div class="column">
-            <h3>Swajeet</h3>
-            <ul>
-                <li>Wheat flour mill</li>
-                <li>Mulberry silk farming</li>
-                <li>Recycle wing</li>
-                <li>Tourism (lakes, wildlife sanctuary)</li>
-                <li>Healthcare and wellness centres</li>
-            </ul>
-        </div>
+        <h2>Phase 1: City Map & Topography</h2>
+        <p>
+            Amarapalli, near Hyderabad in Telangana (Pincode: 500001), spans 1500 sq km on the Deccan Plateau, characterized by rugged terrain, small hills, and lateritic soils. It has a tropical climate with hot summers, moderate rainfall, and mild winters. The city features modern infrastructure, traditional architecture, and strong connectivity via roads and rail. Its economy is shaped by proximity to IT hubs, industries, and agriculture. Rich in cultural heritage influenced by Qutb Shahi and Asaf Jahi dynasties, the city predominantly speaks Telugu and Urdu. Biodiversity includes scrub forests, thorny bushes, and semi-arid wildlife.
+        </p>
 
-        <div class="column">
-            <h3>Prajwal</h3>
-            <ul>
-                <li>Public food distribution</li>
-                <li>Cotton goods industry</li>
-                <li>Organic manure production</li>
-                <li>Climate resilient infrastructure for urban development</li>
-                <li>Smart water management</li>
-            </ul>
+        <div class="image-container">
+            
+
+        <div class="image-container">
+            <img src="daa.jpg" alt="Image description">
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2025 City Design Project. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
-*Key improvements:*
-
-- *Clear Structure:* The HTML uses a container and column classes to create a well-organized layout for the business ideas.
-- *Conciseness:* The HTML focuses solely on the "Phase 2: Business Idea Generation" section, avoiding repetition from the original code.
-- *Readability:* The code is formatted with proper indentation and spacing for better readability.
-- *Accessibility:* The code uses semantic HTML elements like h3 and ul to improve accessibility for screen readers and other assistive technologies.
-
-This code effectively presents the business ideas from the image in a structured and visually appealing format.
