@@ -3,131 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course and Introduction Information</title>
+    <title>City Design Project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #e9f7f6; /* Light teal background */
-            color: #333;
-            line-height: 1.6;
+            margin: 20px;
+            background-color: #f5f5f5;
         }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            overflow: hidden;
-            padding: 20px;
-            background: #ffffff; /* White background for content */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        .sidebar {
+            background-color: #00cfe8;
+            color: white;
+            padding: 15px;
+            width: 200px;
+            float: left;
         }
-        header {
-            background: #00796b; /* Deep teal color */
-            color: #fff;
-            padding: 30px 0;
-            text-align: center;
-            border-radius: 8px 8px 0 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 26px;
-            font-weight: bold;
-        }
-        table {
-            width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
-        }
-        table th, table td {
-            padding: 12px 15px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-        table th {
-            background-color: #c8e6c9; /* Light green */
-            font-weight: bold;
-        }
-        table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        table tr:hover {
-            background-color: #f1f1f1;
-        }
-        a {
-            color: #007bff;
+        .sidebar a {
+            color: white;
             text-decoration: none;
-            font-weight: bold;
+            display: block;
+            margin: 10px 0;
         }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-top: 40px;
-        }
-        .dark-container {
-            background-color: #181818;
-            color: #f4f4f4;
+        .content {
+            margin-left: 220px;
             padding: 20px;
-            margin-top: 40px;
-            border-radius: 8px;
         }
-        .dark-container h1, .dark-container h2 {
-            color: #ffffff;
+        .github-button {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
         }
-        .dark-container p {
-            font-size: 18px;
-            text-align: justify;
+        .github-button:hover {
+            background-color: #555;
         }
-        .highlight {
-            color: #77aadd;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Introduction</h1>
-    </header>
-    <div class="container">
-        <p><strong>Course:</strong> DAA</p>
-        <p><strong>Course Code:</strong> 24ECSC205</p>
-        <p><strong>Course Instructor:</strong> Prof. Vijayalakshmi</p>
-        <p><strong>University:</strong> KLE Technological University</p>
-        <p><strong>Topic:</strong> City Design</p>
-        
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>USN</th>
-            </tr>
-            <tr>
-                <td><a href="#">Ayesha Maniyar</a></td>
-                <td>01fe23bci007</td>
-            </tr>
-            <tr>
-                <td><a href="#">Tejaswini MV</a></td>
-                <td>01fe23bci044</td>
-            </tr>
-            <tr>
-                <td><a href="#">Gouri Banapurmath</a></td>
-                <td>01fe23bci079</td>
-            </tr>
-        </table>
+
+    <div class="sidebar">
+        <h3>CITY DESIGN</h3>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Project</a>
     </div>
 
-    <div class="dark-container">
-        <h1>What is the course about?</h1>
+    <div class="content">
+        <h1>City Design Project</h1>
         <p>
-            <span class="highlight">—</span> Design and analysis of algorithms is more than a branch of computer science. It is the core of computer science, and, in all fairness, can be said to be relevant to most of science, business, and technology. The course is about understanding the interesting patterns existing in nature as many natural processes can inspire computational algorithms and vice versa. It helps in the development of analytical thinking, which can help in various problem-solving strategies.
+            Our flagship project is a visionary sustainable city plan developed from the ground up to create 
+            an eco-friendly, resource-efficient, and socially inclusive urban environment. It integrates innovative 
+            strategies to enhance energy efficiency, reduce waste, improve transportation, and promote community well-being.
         </p>
-        <h2>What kind of data structures and algorithms have you studied?</h2>
+        <a class="github-button" href="https://github.com/your-repository-link" target="_blank">Find this project on GitHub</a>
+
+        <h2>Phase 1: City Map & Topography</h2>
         <p>
-            <span class="highlight">—</span> Exploring data structures feels like a journey through a fascinating family. From the continuity of memory blocks in arrays and strings to the interlinked nature of web pages seen in linked lists, each structure tells a story. Stacks and queues evoke everyday images of biscuit piles and waiting lines, while trees and tries expand our understanding into hierarchies and efficient searches. Skip lists, inspired by coin tosses, add an element of randomness with precision.
+            Spanning an area of 1500 sq km, Indraprastha is a city located near New Delhi, India, within the district of 
+            "Pratigna" and having the pincode 110002. The city's topography is predominantly a flat terrain, situated 
+            on the fertile Indo-Gangetic plain.
         </p>
-        <h2>How do you connect the course with real-time applications?</h2>
-        <p>
-            <span class="highlight">—</span> We are both aware and oblivious to the algorithms that permeate our lives, much like the omnipresent air we breathe. Dijkstra's Algorithm guides us home through GPS, ensuring the quickest route, while sorting algorithms manage massive datasets in e-commerce platforms. These algorithms take complex challenges and carve them into elegant solutions, quietly enhancing our daily technological interactions and making our digital experiences smoother and more intuitive. They are the invisible hands that optimize, protect, and personalize the technology we rely on every day.
-        </p>
+
+        <!-- Insert image -->
+        <img src="city-map.jpg" alt="City Map and Topography">
     </div>
+
 </body>
 </html>
