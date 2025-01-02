@@ -1,5 +1,370 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Design Project - SDGs Alignment</title>
+    <style>
+        body {
+            background-color: #000000; /* Black background */
+            color: #FFC0CB; /* Pink text color */
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1a1a1a; /* Dark grey background for content */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h1, h2 {
+            color: #FF69B4; /* Bright pink for headings */
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #FF69B4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>City Design Project - SDGs Alignment</h1>
+        
+        <h2>1. SDG 7: Affordable and Clean Energy</h2>
+        <p>Focus on integrating energy-efficient systems, promoting renewable energy, and reducing waste to create a resource-efficient city.</p>
+
+        <h2>2. SDG 9: Industry, Innovation, and Infrastructure</h2>
+        <p>Development of modern infrastructure, fostering innovation in urban planning, and enhancing connectivity with IT hubs and industries.</p>
+
+        <h2>3. SDG 11: Sustainable Cities and Communities</h2>
+        <p>Building an eco-friendly and socially inclusive city that addresses overpopulation, improves transportation, and ensures community well-being.</p>
+
+        <h2>4. SDG 12: Responsible Consumption and Production</h2>
+        <p>Minimizing waste and promoting efficient resource use in urban development.</p>
+    </div>
+</body>
+</html>
+
+
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Algorithms</title>
+    <style>
+        body {
+            background-color: black;
+            color: pink;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #ff69b4;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>University Sector Algorithms</h1>
+
+    <div class="section">
+        <h2>Library: KMP Algorithm for Finding Books by Titles</h2>
+        <h3>Why KMP Algorithm?</h3>
+        <p>The Knuth-Morris-Pratt (KMP) algorithm is efficient for searching patterns in strings. It preprocesses the pattern (book title) to allow for quick matches, minimizing the time spent backtracking in case of mismatches.</p>
+        <p>Libraries often contain a vast number of book titles, and users may search for a specific title or partial matches. The KMP algorithm ensures that the search is done in linear time, even for large datasets.</p>
+        <h3>How Does It Work?</h3>
+        <ul>
+            <li><strong>Pattern Matching:</strong> The KMP algorithm scans the book titles database for the user's query (title).</li>
+            <li><strong>Preprocessing:</strong> A prefix table is created for the search pattern, enabling efficient backtracking during mismatches.</li>
+            <li><strong>Search Execution:</strong> The algorithm quickly locates the title by matching characters, skipping unnecessary comparisons.</li>
+        </ul>
+        <h3>Benefits:</h3>
+        <ul>
+            <li>Efficiently handles large volumes of book titles.</li>
+            <li>Allows partial title matching, enhancing user search experience.</li>
+            <li>Optimized performance for dynamic and frequently updated library databases.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Course Registration: Binary Search Tree (BST) Algorithm</h2>
+        <h3>Why BST Algorithm?</h3>
+        <p>The Binary Search Tree (BST) is ideal for managing hierarchical data, such as course registrations. It provides an ordered structure that allows efficient insertion, deletion, and lookup operations.</p>
+        <p>In a university setting, students can register for courses by course ID, and the BST ensures quick access and updates in logarithmic time.</p>
+        <h3>How Does It Work?</h3>
+        <ul>
+            <li><strong>Data Organization:</strong> Each course is represented as a node in the BST, sorted by course ID or another key (e.g., course name).</li>
+            <li><strong>Search:</strong> Students can quickly find available courses by traversing the tree.</li>
+            <li><strong>Insertion/Deletion:</strong> Adding or removing courses from the list is efficient, ensuring that the tree remains balanced for optimal operations.</li>
+        </ul>
+        <h3>Benefits:</h3>
+        <ul>
+            <li>Fast course search, addition, and removal.</li>
+            <li>Ensures no duplication of course IDs.</li>
+            <li>Easy integration with other university systems for seamless user experience.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Grade Tracking: Fenwick Tree Algorithm</h2>
+        <h3>Why Fenwick Tree Algorithm?</h3>
+        <p>The Fenwick Tree (Binary Indexed Tree) is ideal for performing prefix sum operations and range queries efficiently. This makes it suitable for tracking and updating student grades, especially when grades are stored as cumulative data.</p>
+        <p>It is particularly useful when frequent updates to grades (e.g., adding marks for assignments or exams) and queries for overall performance are required.</p>
+        <h3>How Does It Work?</h3>
+        <ul>
+            <li><strong>Data Storage:</strong> Grades are stored in a tree-like structure where each node represents a cumulative sum of a range of grades.</li>
+            <li><strong>Grade Updates:</strong> When a grade is updated, only specific nodes are modified, ensuring minimal computational effort.</li>
+            <li><strong>Querying:</strong> To calculate a student’s total grades or performance over a specific range, the algorithm computes the sum in logarithmic time.</li>
+        </ul>
+        <h3>Benefits:</h3>
+        <ul>
+            <li>Fast updates and range queries for grades.</li>
+            <li>Efficient handling of large datasets with minimal storage overhead.</li>
+            <li>Simplifies tracking and managing cumulative performance metrics.</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Algorithms Interactive Demo</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #FFC0CB;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #FF69B4;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #FF69B4;
+            border-radius: 8px;
+        }
+        .section h2 {
+            color: #FF69B4;
+        }
+        .buttons {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #FF69B4;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #FFC0CB;
+        }
+        .output {
+            background-color: #000;
+            border: 1px solid #FF69B4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: #FFC0CB;
+        }
+    </style>
+</head>
+<body>
+    <h1>University Algorithms Interactive Demo</h1>
+    <div class="container">
+        <div class="section" id="kmp-section">
+            <h2>Library Search: KMP Algorithm</h2>
+            <p>Search for book titles using the KMP algorithm.</p>
+            <div>
+                <label for="kmp-query">Enter Search Query:</label>
+                <input type="text" id="kmp-query">
+            </div>
+            <div class="buttons">
+                <button onclick="runKMP()">Search</button>
+            </div>
+            <div class="output" id="kmp-output"></div>
+        </div>
+
+        <div class="section" id="bst-section">
+            <h2>Course Registration: BST Algorithm</h2>
+            <p>Register, search, and display courses using the BST algorithm.</p>
+            <div>
+                <label for="course-id">Course ID:</label>
+                <input type="number" id="course-id">
+                <label for="course-name">Course Name:</label>
+                <input type="text" id="course-name">
+            </div>
+            <div class="buttons">
+                <button onclick="registerCourse()">Register Course</button>
+                <button onclick="searchCourse()">Search Course</button>
+                <button onclick="displayCourses()">Display All Courses</button>
+            </div>
+            <div class="output" id="bst-output"></div>
+        </div>
+
+        <div class="section" id="fenwick-section">
+            <h2>Grade Tracking: Fenwick Tree Algorithm</h2>
+            <p>Track and update student grades using the Fenwick Tree algorithm.</p>
+            <div>
+                <label for="student-id">Student ID:</label>
+                <input type="number" id="student-id">
+                <label for="grade">Grade:</label>
+                <input type="number" id="grade">
+            </div>
+            <div class="buttons">
+                <button onclick="updateGrade()">Update Grade</button>
+                <button onclick="queryGrades()">Query Range</button>
+            </div>
+            <div class="output" id="fenwick-output"></div>
+        </div>
+    </div>
+
+    <script>
+        // KMP Algorithm Simulation
+        const bookTitles = [
+            "Introduction to Algorithms",
+            "Design Patterns",
+            "Data Structures and Algorithms",
+            "Advanced C++ Programming",
+            "Machine Learning Basics"
+        ];
+        function runKMP() {
+            const query = document.getElementById("kmp-query").value.toLowerCase();
+            const results = bookTitles.filter(title => title.toLowerCase().includes(query));
+            document.getElementById("kmp-output").innerText = results.length 
+                ? Books Found: \n${results.join('\n')} 
+                : "No books found.";
+        }
+
+        // BST Algorithm Simulation
+        class Course {
+            constructor(courseID, courseName) {
+                this.courseID = courseID;
+                this.courseName = courseName;
+                this.left = null;
+                this.right = null;
+            }
+        }
+        let courseRoot = null;
+        function insertCourse(root, courseID, courseName) {
+            if (!root) return new Course(courseID, courseName);
+            if (courseID < root.courseID) root.left = insertCourse(root.left, courseID, courseName);
+            else root.right = insertCourse(root.right, courseID, courseName);
+            return root;
+        }
+        function registerCourse() {
+            const id = parseInt(document.getElementById("course-id").value);
+            const name = document.getElementById("course-name").value;
+            courseRoot = insertCourse(courseRoot, id, name);
+            document.getElementById("bst-output").innerText = "Course registered!";
+        }
+        function searchCourse() {
+            const id = parseInt(document.getElementById("course-id").value);
+            let node = courseRoot, found = null;
+            while (node) {
+                if (node.courseID === id) { found = node; break; }
+                node = id < node.courseID ? node.left : node.right;
+            }
+            document.getElementById("bst-output").innerText = found 
+                ? Course Found: ${found.courseName} 
+                : "Course not found.";
+        }
+        function displayCourses() {
+            const traverse = root => root ? [...traverse(root.left), ID: ${root.courseID}, Name: ${root.courseName}, ...traverse(root.right)] : [];
+            document.getElementById("bst-output").innerText = traverse(courseRoot).join('\n') || "No courses registered.";
+        }
+
+        // Fenwick Tree Simulation
+        const fenwick = Array(101).fill(0);
+        const grades = Array(101).fill(0);
+        function updateGrade() {
+            const id = parseInt(document.getElementById("student-id").value);
+            const grade = parseInt(document.getElementById("grade").value);
+            const diff = grade - grades[id];
+            grades[id] = grade;
+            for (let i = id; i <= 100; i += i & -i) fenwick[i] += diff;
+            document.getElementById("fenwick-output").innerText = Grade updated for Student ${id}.;
+        }
+        function queryGrades() {
+            const l = parseInt(prompt("Enter start of range:"));
+            const r = parseInt(prompt("Enter end of range:"));
+            const sum = idx => { let s = 0; for (let i = idx; i > 0; i -= i & -i) s += fenwick[i]; return s; };
+            document.getElementById("fenwick-output").innerText = Total grades in range [${l}, ${r}]: ${sum(r) - sum(l - 1)}.;
+        }
+    </script>
+</body>
+</html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
